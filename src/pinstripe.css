@@ -1,0 +1,92 @@
+body,ul {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #333 !important;
+    color: #ccc;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: #eee !important;
+    color: #333;
+  }
+}
+
+#tablist {
+	padding: 0.5em;
+	display: block;
+}
+#tablist li {
+	width: 100%;
+	display: block;
+	padding: 0.3em;
+	margin-bottom: 1em;
+	border-radius: 50%;
+	background-color: #333;
+	transition: all 0.1s ease-in;
+	position: relative;
+}
+
+.attention:before {
+	width: 0.5em;
+	height: 100%;
+	border-radius: 0.2em;
+	background-color: white;
+	left: -1em;
+	position: absolute;
+	content: " ";
+	display: block;
+}
+
+.muted:after {
+	background-color: #ccc;
+	left: 100%;
+	top: 100%;
+	margin-top: -3em;
+	margin-left: -3em;
+	border-radius: 2em;
+	background-image: url(../mute.svg);
+	content: " ";
+	display: block;
+	width: 2em;
+	height: 2em;
+	background-size: 2em;
+	position: absolute;
+}
+
+#tablist li:hover, #tablist li.active {
+	border-radius: 20%;
+	background-color: #666;
+}
+#tablist img {
+	width: 100%;
+	display: block;
+}
+
+#menu.active {
+	padding: 1em;
+	max-height: 10em;
+}
+
+#menu {
+	position: absolute;
+	overflow: hidden;
+	background-color: #444;
+	color: #eee;
+	width: 14em;
+	max-height: 0;
+	transition: all 0.1s ease-in;
+}
+
+#menu li {
+	padding: 0.5em;
+}
+
+#menu li:hover {
+	background-color: #aaa;
+}

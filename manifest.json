@@ -1,0 +1,31 @@
+{
+
+  "manifest_version": 2,
+  "name": "Pinstripe",
+  "version": "1.0",
+
+  "description": "Puts pinned tabs in the sidebar. Note: See addon page for better styling.",
+
+  "icons": {
+    "48": "icon.png"
+  },
+
+  "sidebar_action": {
+  	"default_title": "Pinstripe",
+  	"default_panel": "src/pinstripe.html",
+  	"default_icon": "icon.png"
+	},
+  "permissions": [
+  	"tabs"
+  ],
+  "commands": {
+    "_execute_sidebar_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+P",
+        "linux": "Alt+Shift+P"
+      },
+      "description": "__MSG_commandOpenSidebar__"
+    }    
+  }
+
+}
