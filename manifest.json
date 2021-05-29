@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Pinstripe",
-  "version": "1.0",
+  "version": "1.1",
 
   "description": "Puts pinned tabs in the sidebar. Note: See addon page for better styling.",
 
